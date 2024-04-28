@@ -1,7 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
   <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <pattern>Hello</pattern>
+    <template>😁Hi, I am HealthC. What can I help you?</template>
   </category>
+  <category>
+      <pattern>My heart was not feeling well</pattern>
+      <template>Oh, I so worry about your condition. What do you want to ask me?
+      </template>
+  </category>
+  <category>
+      <pattern>What advice you can give me</pattern>
+      <template>For my opinion, you can maintain your daily diet. Also, you can take your medicine on time      
+      <reply>
+          <text>Still need more advice?</text>
+          <postback>Where can find advice that you search for me</postback>
+      </reply>
+      <reply>
+          <text>No need more advice</text>
+          <postback>It is very helpful for me. Thanks</postback>
+      </reply>
+      </template>
+  </category>
+  <category>
+      <pattern>Where can find advice that you search for me</pattern>
+      <template>Here is the link that can use for you
+      <link>
+          <text>Click Here</text>
+          <url>https://www.nhs.uk/conditions/coronary-heart-disease/prevention/</url>
+      </link>
+      <button>
+          <text>Is this helped you?</text>
+          <postback>Thank you very much for helping me</postback>
+      </button>
+      <button>
+          <text>No. It doesn't helped you</text>
+          <postback>Bad experiment of it</postback>
+      </button>
+      </template>
+  </category>
+  <category>
+      <pattern>It is very helpful for me. Thanks</pattern>
+      <template>I am grate for you about using for your question</template>
+  </category>
+  <category>
+      <pattern>Thank you very much for helping me</pattern>
+      <template>I am very happy for helping you to solve your problem</template>
+  </category>
+  <category>
+      <pattern>Bad experiment of it</pattern>
+      <template>Sorry about can't solve your question. I will try to improve myself to solve your question</template>
+  </category>
+  <category>
+      <pattern>What can I do to maintain heart diseases</pattern>
+      <template>Here is the link that can help you to maintain it
+      <button>
+          <text>Click Here</text>
+          <url>https://health.gov/myhealthfinder/health-conditions/heart-health/keep-your-heart-healthy</url>
+      </button>
+      </template>
+  </category>
+  <category>
+      <pattern>Where is the heart in my body</pattern>
+      <template>Here is the place of you heart. If didn't understand, here is the video below of image
+      <image>
+          https://c8.alamy.com/comp/G16JAD/human-heart-diagram-in-detail-illustration-G16JAD.jpg
+      </image>
+      </template>
+  </category>
+  <category>
+      <pattern>Have a video about the heart diseases</pattern>
+      <template>Here is the video about heart diseases
+      <button>
+          <text>Video at here</text>
+          <url>https://youtu.be/g131j2lb3xw?si=PAlITPaiCXedyp2L</url>
+      </button>
+      </template>
+  </category>
+  <category>
+     <pattern>Sorry, I can't understand it.</pattern>
+     <template><srai>WHAT CAN I DO TO MAINTAIN HEART DISEASES</srai></template>
+   </category>
+
 </aiml>
